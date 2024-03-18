@@ -23,7 +23,7 @@ public class TaskTyreOff extends PitCrewTeam {
     }
 
     public int getNumberOfTires() {
-        return numberOfTires;
+        return this.numberOfTires;
     }
 
     public void setNumberOfTires(int numberOfTires) {
@@ -31,7 +31,7 @@ public class TaskTyreOff extends PitCrewTeam {
     }
 
     public boolean getTireWorn() {
-        return tireWorn;
+        return this.tireWorn;
     }
 
     public void setTireWorn(boolean tireWorn) {
@@ -39,7 +39,7 @@ public class TaskTyreOff extends PitCrewTeam {
     }
 
     public boolean getImproveTire() {
-        return improveTire;
+        return this.improveTire;
     }
 
     public void setImproveTire(boolean improveTire) {
