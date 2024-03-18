@@ -1,4 +1,4 @@
-public class TeamDriverB {
+public class TeamDriverB extends TaskSideJack {
     private String teamName;
     private String carBrand;
     private int numberOfRaces;
@@ -7,6 +7,10 @@ public class TeamDriverB {
         this.teamName = teamName;
         this.carBrand = carBrand;
         this.numberOfRaces = numberOfRaces;
+    }
+
+    public void getSpecializedTechnique() {
+        this.speak();
     }
 
     public String getTeamName() {

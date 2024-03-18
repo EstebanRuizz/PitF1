@@ -22,10 +22,9 @@ public class PitCrewTeam {
 
     protected void addRequiredTasks() {
         this.taskRequired.add("Tyre on");
-        this.taskRequired.add("Rear jack");
-        this.taskRequired.add("Side jack");
-        this.taskRequired.add("Front jack");
-        this.taskRequired.add("Front wing flap adjust");
+        this.taskRequired.add("Tyre off");
+        this.taskRequired.add("Tyre gunner");
+        this.taskRequired.add("Lollipop man");
     }
 
     public void printInformation() {

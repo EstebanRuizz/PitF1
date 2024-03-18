@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TeamDriverA {
+public class TeamDriverA extends TaskFrontJack {
     private List<String> taskRequired = new ArrayList<>();
     private String teamName;
     private String carColor;
@@ -11,8 +11,10 @@ public class TeamDriverA {
         this.teamName = teamName;
         this.carColor = carColor;
         this.numberOfRaces = numberOfRaces;
+    }
 
-
+    public void getSpecializedTechnique() {
+        this.speak();
     }
 
     public String getTeamName() {
@@ -56,5 +58,4 @@ public class TeamDriverA {
             System.out.println("Error: El nuevo color no puede estar vacío.");
         }
     }
-
 }
