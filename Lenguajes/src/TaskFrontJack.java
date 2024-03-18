@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 
 public class TaskFrontJack extends PitCrewTeam {
+    private int requiredMembers = 2;
 
-    public TaskFrontJack(String name, String lastName, int age, String rol, boolean worksForA,
-            boolean worksForB, boolean worksForBoth) {
-        super(name, lastName, age, rol, worksForA, worksForB, worksForBoth);
+    public TaskFrontJack() {
+        super(null);
     }
 
     public void setIncapacitated(boolean incapacitated) {
@@ -21,7 +22,8 @@ public class TaskFrontJack extends PitCrewTeam {
         if (incapacitated || pitStopFailed || pitStopLost) {
             System.out.println("¡Se activa el miembro de repuesto para continuar con el proceso!");
         } else {
-            System.out.println("El miembro y el pit stop están en condiciones óptimas. No se requiere el uso del miembro de repuesto.");
+            System.out.println(
+                    "El miembro y el pit stop están en condiciones óptimas. No se requiere el uso del miembro de repuesto.");
         }
     }
 }

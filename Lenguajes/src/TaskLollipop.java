@@ -1,9 +1,10 @@
 
 public class TaskLollipop extends PitCrewTeam {
+    private int requiredMembers = 2;
 
-    public TaskLollipop(String name, String lastName, int age, String rol, boolean worksForA,
-            boolean worksForB, boolean worksForBoth) {
-        super(name, lastName, age, rol, worksForA, worksForB, worksForBoth);
+    public TaskLollipop() {
+        super(null);
+        this.PitCrewTaskName = "Check for 'Lollipop man'";
     }
 
     public void speak() {

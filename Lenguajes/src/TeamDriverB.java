@@ -33,16 +33,21 @@ public class TeamDriverB {
         this.numberOfRaces = numberOfRaces;
     }
 
-    private String getTeamInfo() {
-        return "Nombre de equipo: " + teamName + "\nMarca de auto: " + carBrand + "\nNumero de carreras realizadas: " + numberOfRaces;
+    public void getAllTeamInfo() {
+        this.teamInfo();
     }
-    
+
+    private String teamInfo() {
+        return "Nombre de equipo: " + teamName + "\nMarca de auto: " + carBrand + "\nNumero de carreras realizadas: "
+                + numberOfRaces;
+    }
+
     public void changeCarBrand(String newBrand) {
         if (newBrand != null && !newBrand.isEmpty()) {
-            carBrand = newBrand;
+            this.carBrand = newBrand;
             System.out.println("La marca del vehículo ha sido cambiada a: " + newBrand);
         } else {
             System.out.println("Error: La nueva marca no puede estar vacía.");
         }
-}
+    }
 }

@@ -43,7 +43,6 @@ public class F1Team {
         return trophies;
     }
 
-
     public void economyOfTeam() {
         if (this.getBudget() > 0 && this.getBudget() < 50000000) {
             System.out.println("El presupuesto del equipo es bajo, hay que limitar gastos.");

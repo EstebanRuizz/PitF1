@@ -1,9 +1,11 @@
 
 public class TaskTyreOff extends PitCrewTeam {
+    private int numberOfTires = 4;
+    private boolean tireWorn = false;
+    private boolean improveTire = false;
 
-    public TaskTyreOff(String name, String lastName, int age, String rol, boolean worksForA,
-            boolean worksForB, boolean worksForBoth) {
-        super(name, lastName, age, rol, worksForA, worksForB, worksForBoth);
+    public TaskTyreOff() {
+        super(null);
     }
 
     public void speak() {
@@ -11,12 +13,36 @@ public class TaskTyreOff extends PitCrewTeam {
     }
 
     public boolean remove(int numberOfTires, boolean tireWorn, boolean improveTire) {
-        if (tireWorn || improveTire) {
+        if (tireWorn == this.getImproveTire() || improveTire == this.getImproveTire()) {
             return true;
-        } else if (numberOfTires <= 0 ) {
+        } else if (numberOfTires == this.getNumberOfTires()) {
             return false;
         } else {
-            return false;
+            return true;
         }
+    }
+
+    public int getNumberOfTires() {
+        return numberOfTires;
+    }
+
+    public void setNumberOfTires(int numberOfTires) {
+        this.numberOfTires = numberOfTires;
+    }
+
+    public boolean getTireWorn() {
+        return tireWorn;
+    }
+
+    public void setTireWorn(boolean tireWorn) {
+        this.tireWorn = tireWorn;
+    }
+
+    public boolean getImproveTire() {
+        return improveTire;
+    }
+
+    public void setImproveTire(boolean improveTire) {
+        this.improveTire = improveTire;
     }
 }

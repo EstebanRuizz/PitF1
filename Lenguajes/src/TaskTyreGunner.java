@@ -1,9 +1,8 @@
 
 public class TaskTyreGunner extends PitCrewTeam {
 
-    public TaskTyreGunner(String name, String lastName, int age, String rol, boolean worksForA,
-            boolean worksForB, boolean worksForBoth) {
-        super(name, lastName, age, rol, worksForA, worksForB, worksForBoth);
+    public TaskTyreGunner() {
+        super(null);
     }
 
     public void speak() {

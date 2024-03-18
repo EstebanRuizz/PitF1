@@ -1,4 +1,4 @@
-public class TeamDriverA{
+public class TeamDriverA {
     private String teamName;
     private String carColor;
     private int numberOfRaces;
@@ -33,16 +33,22 @@ public class TeamDriverA{
         this.numberOfRaces = numberOfRaces;
     }
 
-    private String TeamInfo() {
-        return "Nombre de equipo: " + teamName + "\nColor de auto: " + carColor + "\nNumero de carreras realizadas: " + numberOfRaces;
+    public void getAllTeamInfo() {
+        this.teamInfo();
     }
-    
+
+    private String teamInfo() {
+        return "Nombre de equipo: " + this.teamName + "\nColor de auto: " + this.carColor
+                + "\nNumero de carreras realizadas: " + this.numberOfRaces;
+    }
+
     public void changeCarColor(String newColor) {
         if (newColor != null && !newColor.isEmpty()) {
-            carColor = newColor;
+            this.carColor = newColor;
             System.out.println("El color del auto ha sido cambiado a: " + newColor);
         } else {
             System.out.println("Error: El nuevo color no puede estar vacío.");
         }
     }
+
 }

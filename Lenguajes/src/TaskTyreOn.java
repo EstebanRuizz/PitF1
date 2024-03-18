@@ -1,9 +1,8 @@
 
 public class TaskTyreOn extends PitCrewTeam {
 
-    public TaskTyreOn(String name, String lastName, int age, String rol, boolean worksForA,
-            boolean worksForB, boolean worksForBoth) {
-        super(name, lastName, age, rol, worksForA, worksForB, worksForBoth);
+    public TaskTyreOn() {
+        super(null);
     }
 
     public void speak() {

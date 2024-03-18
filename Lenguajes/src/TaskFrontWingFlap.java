@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 
 public class TaskFrontWingFlap extends PitCrewTeam {
+    private int requiredMembers = 2;
 
-    public TaskFrontWingFlap(String name, String lastName, int age, String rol, boolean worksForA,
-            boolean worksForB, boolean worksForBoth) {
-        super(name, lastName, age, rol, worksForA, worksForB, worksForBoth);
+    public TaskFrontWingFlap() {
+        super(null);
     }
 
     public void speak() {

@@ -1,9 +1,8 @@
 public class TaskSideJack extends PitCrewTeam {
 
     
-    public TaskSideJack(String name, String lastName, int age, String rol, boolean worksForA,
-    boolean worksForB, boolean worksForBoth) {
-        super(name, lastName, age, rol, worksForA, worksForB, worksForBoth); 
+    public TaskSideJack() {
+        super(null); 
     }
     
     public void speak(){

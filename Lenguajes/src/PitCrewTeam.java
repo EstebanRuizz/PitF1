@@ -1,33 +1,30 @@
 import java.util.ArrayList;
 
 public class PitCrewTeam {
+    protected String PitCrewTaskName;
     private ArrayList<PitCrewMember> ListPitCrewMember;
 
     public PitCrewTeam(ArrayList<PitCrewMember> ListPitCrewMember) {
-        this.ListPitCrewMember = ListPitCrewMember;
+        for (PitCrewMember pitCrewMember : ListPitCrewMember) {
+            if (this.validateAge(pitCrewMember.getAge())) {
+            } else {
+                System.out.println("No es posible agregar por edad: " + pitCrewMember.getName());
+            }
+        }
     }
 
-
-    public static void printInformation() {
-        for (PitCrewTeam member : membersList) {
-            System.out.println("Nombre: " + member.getName());
-            System.out.println("Apellido: " + member.getLastName());
-            System.out.println("Edad: " + member.getAge());
-            System.out.println("Rol: " + member.getRol());
-            if (member.getWorksForA()) {
-                System.out.println("Trabaja para A");
-            }
-            if (member.getWorksForB()) {
-                System.out.println("Trabaja para B");
-            }
-            if (member.getWorksForBoth()) {
-                System.out.println("Trabaja para ambos");
-            }
+    public void printInformation() {
+        for (PitCrewMember pitCrewMember : ListPitCrewMember) {
+            System.out.println("age: " + pitCrewMember.getAge());
+            System.out.println("rol: " + pitCrewMember.getRol());
+            System.out.println("name: " + pitCrewMember.getName());
+            System.out.println("lastName: " + pitCrewMember.getLastName());
+            System.out.println("worksFor: " + pitCrewMember.getWorksFor().toString());
             System.out.println();
         }
     }
 
-    private boolean validateAge(int edad) {
-        return edad >= 18 && edad <= 60;
+    private boolean validateAge(int age) {
+        return age >= 18 && age <= 60;
     }
 }
