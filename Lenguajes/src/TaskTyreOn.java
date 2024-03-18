@@ -1,5 +1,8 @@
 
 public class TaskTyreOn extends PitCrewTeam {
+    private int numberOfTires = 0;
+    private boolean needTires = true;
+    private boolean newTires = true;
 
     public TaskTyreOn() {
         super(null);
@@ -10,10 +13,36 @@ public class TaskTyreOn extends PitCrewTeam {
     }
 
     public boolean installTires(int numberOfTires, boolean needTires, boolean newTires) {
-        if (needTires && newTires || numberOfTires >= 0 && numberOfTires < 4) {
+        if (numberOfTires == this.getNumberOfTires() || this.getNumberOfTires() < 5 || needTires == this.getNeedTires()
+                || newTires == this.getNewTires()) {
             return true;
         } else {
             return false;
         }
     }
+
+    public void setNumberOfTires(int numberOfTires) {
+        this.numberOfTires = numberOfTires;
+    }
+
+    public int getNumberOfTires() {
+        return numberOfTires;
+    }
+
+    public void setNeedTires(boolean needTires) {
+        this.needTires = needTires;
+    }
+
+    public boolean getNeedTires() {
+        return needTires;
+    }
+
+    public void setNewTires(boolean newTires) {
+        this.newTires = newTires;
+    }
+
+    public boolean getNewTires() {
+        return newTires;
+    }
 }
+
