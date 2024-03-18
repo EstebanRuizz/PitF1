@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static ArrayList<PitCrewMember> getListOfCrewMembers() {
-        ArrayList<PitCrewMember> ListPitCrewMember = new ArrayList<>();
+        ArrayList<PitCrewMember> ListPitCrewMember = new ArrayList<PitCrewMember>();
 
         ListPitCrewMember.add(new PitCrewMember("Adrián", "Gutiérrez", 27, "Tyre gunner", EnumWorksFor.BOTH));
         ListPitCrewMember.add(new PitCrewMember("Diego", "Rodríguez", 29, "Tyre gunner", EnumWorksFor.BOTH));
