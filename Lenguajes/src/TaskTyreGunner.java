@@ -5,7 +5,7 @@ public class TaskTyreGunner extends PitCrewTeam {
     private boolean securityFailed = true;
 
     public TaskTyreGunner() {
-        super(null);
+        super();
     }
 
     public void speak() {

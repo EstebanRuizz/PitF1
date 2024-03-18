@@ -8,6 +8,20 @@ public class Main {
         f1Team.economyOfTeam();
         f1Team.calculateYearsInCompetition();
 
+        PitCrewTeam pitCrewTeam = new PitCrewTeam();
+
+        pitCrewTeam.addListOfPitCrewMember(getListOfCrewMembers());
+        pitCrewTeam.printInformation();
+        f1Team.economyOfTeam();
+        f1Team.calculateYearsInCompetition();
+
+        TeamDriverA teamDriverA = new TeamDriverA("TeamDriverA", "Red", 100);
+
+        TeamDriverB teamDriverB = new TeamDriverB("TeamDriverB", "Mercedez", 95);
+
+    }
+
+    public static ArrayList<PitCrewMember> getListOfCrewMembers() {
         ArrayList<PitCrewMember> ListPitCrewMember = new ArrayList<>();
 
         ListPitCrewMember.add(new PitCrewMember("Adrián", "Gutiérrez", 27, "Tyre gunner", EnumWorksFor.BOTH));
@@ -23,33 +37,22 @@ public class Main {
         ListPitCrewMember.add(new PitCrewMember("Sofía", "Díaz", 29, "Tyre on", EnumWorksFor.BOTH));
         ListPitCrewMember.add(new PitCrewMember("Agustín", "Figueroa", 19, "Tyre on", EnumWorksFor.BOTH));
         ListPitCrewMember.add(new PitCrewMember("Juan", "García", 28, "Tyre on", EnumWorksFor.TEAM_A));
-        ListPitCrewMember.add(new PitCrewMember("Augusto", "Díaz", 29, "Tyre on", EnumWorksFor.TEAM_B ));
-        
-        ListPitCrewMember.add(new PitCrewMember("David", "Rojas", 31, "Front jack", EnumWorksFor.TEAM_B ));
-        ListPitCrewMember.add(new PitCrewMember("Luis", "Hernández", 25, "Front jack", EnumWorksFor.TEAM_A));
-        
-        ListPitCrewMember.add(new PitCrewMember("Ana", "Gómez", 32, "Rear jack", EnumWorksFor.TEAM_A));
-        ListPitCrewMember.add(new PitCrewMember("Laura", "Jiménez", 26, "Rear jack", EnumWorksFor.TEAM_B ));
+        ListPitCrewMember.add(new PitCrewMember("Augusto", "Díaz", 29, "Tyre on", EnumWorksFor.TEAM_B));
 
-        ListPitCrewMember.add(new PitCrewMember("Javier", "Romero", 33, "Side jack", EnumWorksFor.TEAM_B ));
+        ListPitCrewMember.add(new PitCrewMember("David", "Rojas", 31, "Front jack", EnumWorksFor.TEAM_B));
+        ListPitCrewMember.add(new PitCrewMember("Luis", "Hernández", 25, "Front jack", EnumWorksFor.TEAM_A));
+
+        ListPitCrewMember.add(new PitCrewMember("Ana", "Gómez", 32, "Rear jack", EnumWorksFor.TEAM_A));
+        ListPitCrewMember.add(new PitCrewMember("Laura", "Jiménez", 26, "Rear jack", EnumWorksFor.TEAM_B));
+
+        ListPitCrewMember.add(new PitCrewMember("Javier", "Romero", 33, "Side jack", EnumWorksFor.TEAM_B));
         ListPitCrewMember.add(new PitCrewMember("Pablo", "López", 27, "Side jack", EnumWorksFor.TEAM_A));
 
-        ListPitCrewMember.add(new PitCrewMember("Carolina", "Pérez", 28, "Front wing flap adjust", EnumWorksFor.TEAM_B ));
+        ListPitCrewMember.add(new PitCrewMember("Carolina", "Pérez", 28, "Front wing flap adjust", EnumWorksFor.TEAM_B));
         ListPitCrewMember.add(new PitCrewMember("María", "Martínez", 30, "Front wing flap adjust", EnumWorksFor.TEAM_A));
 
         ListPitCrewMember.add(new PitCrewMember("Sara", "Ruiz", 18, "Lollipop man", EnumWorksFor.BOTH));
 
-        PitCrewTeam pitCrewTeam = new PitCrewTeam(ListPitCrewMember);
-
-        pitCrewTeam.printInformation();
-        f1Team.economyOfTeam();
-        f1Team.calculateYearsInCompetition();
-
-        TeamDriverA teamDriverA = new TeamDriverA("TeamDriverA", "Red", 100);
-
-
-        TeamDriverB teamDriverB = new TeamDriverB("TeamDriverB", "Mercedez", 95);
-
-
+        return ListPitCrewMember;
     }
 }

@@ -4,7 +4,7 @@ public class TaskSideJack extends PitCrewTeam {
     private boolean frontJackActivated = true;
 
     public TaskSideJack() {
-        super(null);
+        super(); 
     }
 
     public void speak() {
@@ -26,23 +26,23 @@ public class TaskSideJack extends PitCrewTeam {
     public void setChangesPneumaticsInProcess(boolean changesPneumaticsInProcess) {
         this.changesPneumaticsInProcess = changesPneumaticsInProcess;
     }
- 
+
     public boolean getChangesPneumaticsInProcess() {
         return changesPneumaticsInProcess;
     }
- 
+
     public void setReparationInProcess(boolean reparationInProcess) {
         this.reparationInProcess = reparationInProcess;
     }
- 
+
     public boolean getReparationInProcess() {
         return reparationInProcess;
     }
- 
+
     public void setFrontJackActivated(boolean frontJackActivated) {
         this.frontJackActivated = frontJackActivated;
     }
- 
+
     public boolean getFrontJackActivated() {
         return frontJackActivated;
     }

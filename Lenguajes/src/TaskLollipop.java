@@ -6,7 +6,7 @@ public class TaskLollipop extends PitCrewTeam {
 
 
     public TaskLollipop() {
-        super(null);
+        super();
     }
 
     public void speak() {

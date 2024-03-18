@@ -4,7 +4,7 @@ public class TaskFrontWingFlap extends PitCrewTeam {
     private boolean rain = true;
 
     public TaskFrontWingFlap() {
-        super(null);
+        super();
     }
 
     public void speak() {

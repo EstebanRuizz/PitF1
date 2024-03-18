@@ -4,7 +4,7 @@ public class TaskFrontJack extends PitCrewTeam {
     private boolean pitStopLost = true;
 
     public TaskFrontJack() {
-        super(null);
+        super();
     }
 
     public void speak() {
