@@ -6,6 +6,7 @@ public class TaskTyreGunner extends PitCrewTeam {
 
     public TaskTyreGunner() {
         super();
+        this.requiredPitTeamMembers = 4;
     }
 
     public void speak() {

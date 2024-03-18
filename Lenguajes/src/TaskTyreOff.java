@@ -6,6 +6,7 @@ public class TaskTyreOff extends PitCrewTeam {
 
     public TaskTyreOff() {
         super();
+        this.requiredPitTeamMembers = 4;
     }
 
     public void speak() {

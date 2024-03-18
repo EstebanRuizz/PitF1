@@ -5,6 +5,7 @@ public class TaskFrontWingFlap extends PitCrewTeam {
 
     public TaskFrontWingFlap() {
         super();
+        this.requiredPitTeamMembers = 2;
     }
 
     public void speak() {

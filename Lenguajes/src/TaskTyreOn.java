@@ -6,6 +6,7 @@ public class TaskTyreOn extends PitCrewTeam {
 
     public TaskTyreOn() {
         super();
+        this.requiredPitTeamMembers = 4;
     }
 
     public void speak() {

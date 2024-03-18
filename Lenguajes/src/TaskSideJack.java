@@ -5,6 +5,7 @@ public class TaskSideJack extends PitCrewTeam {
 
     public TaskSideJack() {
         super(); 
+        this.requiredPitTeamMembers = 2;
     }
 
     public void speak() {

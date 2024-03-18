@@ -3,6 +3,7 @@ import java.util.List;
 public class PitCrewTeam {
     protected String pitCrewTaskName;
     protected List<String> taskRequired;
+    protected int requiredPitTeamMembers;
     private List<PitCrewMember> listPitCrewMember;
 
     public PitCrewTeam() {
@@ -19,7 +20,7 @@ public class PitCrewTeam {
         }
     }
 
-    private void addRequiredTasks() {
+    protected void addRequiredTasks() {
         this.taskRequired.add("Tyre on");
         this.taskRequired.add("Rear jack");
         this.taskRequired.add("Side jack");

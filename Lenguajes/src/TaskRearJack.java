@@ -6,6 +6,7 @@ public class TaskRearJack extends PitCrewTeam {
 
     public TaskRearJack() {
         super();
+        this.requiredPitTeamMembers = 2;
     }
 
     public void speak() {

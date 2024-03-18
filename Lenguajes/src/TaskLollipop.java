@@ -7,6 +7,7 @@ public class TaskLollipop extends PitCrewTeam {
 
     public TaskLollipop() {
         super();
+        this.requiredPitTeamMembers = 1;
     }
 
     public void speak() {

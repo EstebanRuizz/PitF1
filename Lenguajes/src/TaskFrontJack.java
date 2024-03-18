@@ -5,6 +5,7 @@ public class TaskFrontJack extends PitCrewTeam {
 
     public TaskFrontJack() {
         super();
+        this.requiredPitTeamMembers = 2;
     }
 
     public void speak() {
