@@ -1,4 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class TeamDriverB extends TaskSideJack {
+    private List<PitCrewMember> listExclusivePitCrewMembers = new ArrayList<>();
+
     private String teamName;
     private String carBrand;
     private int numberOfRaces;
@@ -7,6 +12,21 @@ public class TeamDriverB extends TaskSideJack {
         this.teamName = teamName;
         this.carBrand = carBrand;
         this.numberOfRaces = numberOfRaces;
+    }
+
+    public void showExclusivePitCrewMembers() {
+        for (PitCrewMember pitCrewMember : this.listExclusivePitCrewMembers) {
+            System.out.println(pitCrewMember.getName());
+        }
+    }
+
+    public void addExclusivePitCrewMembers(ArrayList<PitCrewMember> listPitCrewMember) {
+        for (int i = 0; i < listPitCrewMember.size(); i++) {
+            PitCrewMember pitCrewMember = listPitCrewMember.get(i);
+            if (pitCrewMember.getWorksFor().equals("TEAM_B")) {
+                this.listExclusivePitCrewMembers.add(pitCrewMember);
+            }
+        }
     }
 
     public void getSpecializedTechnique() {

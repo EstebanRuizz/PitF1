@@ -13,7 +13,7 @@ public class TaskFrontJack extends PitCrewTeam {
                 "se le puedan colocar las llantas fácilmente.\n");
     }
 
-    public void useReplacementFrontJack(boolean incapacitated, boolean pitStopFailed, boolean pitStopLost) {
+    public void principalAction(boolean incapacitated, boolean pitStopFailed, boolean pitStopLost) {
         if (incapacitated == this.getIncapacitated() || pitStopFailed == this.getPitStopFailed()|| pitStopLost == this.getPitStopLost()) {
             System.out.println("¡Se activa el miembro de repuesto para continuar con el proceso!");
         } else {

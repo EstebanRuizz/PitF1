@@ -13,7 +13,7 @@ public class TaskFrontWingFlap extends PitCrewTeam {
                 "aerodinámicos al alerón delantero del coche. \n");
     }
 
-    public void verifyTrackConditions(int tireWear, int fuelLevel, boolean rain) {
+    public void principalAction(int tireWear, int fuelLevel, boolean rain) {
         if (rain == this.getRain()) {
             System.out.println("Está lloviendo. Se recomienda usar neumáticos con mayor agarre.");
         } else {

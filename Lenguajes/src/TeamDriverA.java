@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeamDriverA extends TaskFrontJack {
-    private List<String> taskRequired = new ArrayList<>();
+
+    private List<PitCrewMember> listExclusivePitCrewMembers = new ArrayList<>();
     private String teamName;
     private String carColor;
     private int numberOfRaces;
@@ -13,6 +14,21 @@ public class TeamDriverA extends TaskFrontJack {
         this.numberOfRaces = numberOfRaces;
     }
 
+    public void showExclusivePitCrewMembers() {
+        for (PitCrewMember pitCrewMember : this.listExclusivePitCrewMembers) {
+            System.out.println(pitCrewMember.getName());
+        }
+    }
+
+    public void addExclusivePitCrewMembers(ArrayList<PitCrewMember> listPitCrewMember) {
+        for (int i = 0; i < listPitCrewMember.size(); i++) {
+            PitCrewMember pitCrewMember = listPitCrewMember.get(i);
+            if (pitCrewMember.getWorksFor().equals("TEAM_A")) {
+                this.listExclusivePitCrewMembers.add(pitCrewMember);
+            }
+        }
+    }
+    
     public void getSpecializedTechnique() {
         this.speak();
     }

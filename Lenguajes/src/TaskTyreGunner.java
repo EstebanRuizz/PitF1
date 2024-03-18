@@ -14,7 +14,7 @@ public class TaskTyreGunner extends PitCrewTeam {
                 "tuercas de las ruedas. \n");
     }
 
-    public void checkCarStatus(boolean errorColocationWheel, boolean engineFailure, boolean securityFailed) {
+    public void principalAction(boolean errorColocationWheel, boolean engineFailure, boolean securityFailed) {
         if (errorColocationWheel == this.getErrorColocationWheel() || engineFailure == this.getEngineFailure()
                 || securityFailed == this.getSecurityFailed()) {
             System.out.println("¡Se detectó un problema que requiere detener el automóvil de inmediato!\n");

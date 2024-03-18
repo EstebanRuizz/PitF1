@@ -1,16 +1,18 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class PitCrewTeam {
     protected String pitCrewTaskName;
-    protected List<String> taskRequired;
+    protected List<String> taskRequired = new ArrayList<>();
     protected int requiredPitTeamMembers;
-    private List<PitCrewMember> listPitCrewMember;
+    private ArrayList<PitCrewMember> listPitCrewMember = new ArrayList<>();
 
     public PitCrewTeam() {
-        this.addRequiredTasks();
+        
     }
 
     public void addListOfPitCrewMember(List<PitCrewMember> listPitCrewMember) {
+        
         for (PitCrewMember pitCrewMember : listPitCrewMember) {
             if (this.validateAge(pitCrewMember.getAge())) {
                 this.listPitCrewMember.add(pitCrewMember);
@@ -19,7 +21,6 @@ public class PitCrewTeam {
             }
         }
     }
-
     protected void addRequiredTasks() {
         this.taskRequired.add("Tyre on");
         this.taskRequired.add("Tyre off");
@@ -45,4 +46,9 @@ public class PitCrewTeam {
     private boolean validateAge(int age) {
         return age >= 18 && age <= 60;
     }
+
+    public ArrayList<PitCrewMember> getListPitCrewMember() {
+        return this.listPitCrewMember;
+    }
+
 }

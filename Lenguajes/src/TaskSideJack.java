@@ -12,7 +12,7 @@ public class TaskSideJack extends PitCrewTeam {
         System.out.println("Soy un side jack, mi labor es estabilizar el carro cuando este es levantado. \n");
     }
 
-    public void keepTheStability(boolean changesPneumaticsInProcess, boolean reparationInProcess,
+    public void principalAction(boolean changesPneumaticsInProcess, boolean reparationInProcess,
             boolean frontJackActivated) {
         if (changesPneumaticsInProcess == this.getChangesPneumaticsInProcess()
                 || reparationInProcess == this.getReparationInProcess()

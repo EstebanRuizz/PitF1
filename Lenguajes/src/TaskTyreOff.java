@@ -13,7 +13,7 @@ public class TaskTyreOff extends PitCrewTeam {
         System.out.println("Soy un tyre off, mi labor es quitar las llantas del coche. \n");
     }
 
-    public boolean remove(int numberOfTires, boolean tireWorn, boolean improveTire) {
+    public boolean principalAction(int numberOfTires, boolean tireWorn, boolean improveTire) {
         if (tireWorn == this.getImproveTire() || improveTire == this.getImproveTire()) {
             return true;
         } else if (numberOfTires == this.getNumberOfTires()) {

@@ -15,7 +15,7 @@ public class TaskLollipop extends PitCrewTeam {
                 "soltar el auto. \n");
     }
 
-    public void evaluateRisks(boolean vehiclesPresents, boolean personalPresent, boolean carReady) {
+    public void principalAction(boolean vehiclesPresents, boolean personalPresent, boolean carReady) {
         if (vehiclesPresents == this.getVehiclesPresents() || personalPresent == this.getPersonalPresent()) {
             System.out.println("¡Atención! Hay otros vehículos o personas presentes en la calle de boxes.");
         } else if (!carReady == this.getCarReady()) {
@@ -29,27 +29,22 @@ public class TaskLollipop extends PitCrewTeam {
         this.vehiclesPresents = vehiclesPresents;
     }
 
-    // Getter para vehiclesPresents
     public boolean getVehiclesPresents() {
         return vehiclesPresents;
     }
 
-    // Setter para personalPresent
     public void setPersonalPresent(boolean personalPresent) {
         this.personalPresent = personalPresent;
     }
 
-    // Getter para personalPresent
     public boolean getPersonalPresent() {
         return personalPresent;
     }
 
-    // Setter para carReady
     public void setCarReady(boolean carReady) {
         this.carReady = carReady;
     }
 
-    // Getter para carReady
     public boolean getCarReady() {
         return carReady;
     }

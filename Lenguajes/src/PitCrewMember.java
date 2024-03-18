@@ -3,17 +3,18 @@ public class PitCrewMember {
     private String rol;
     private String name;
     private String lastName;
-    private EnumWorksFor worksFor;
+    private String worksFor;
 
-    public PitCrewMember(String name, String lastName, int age, String rol, EnumWorksFor WorksFor) {
+    public PitCrewMember(String name, String lastName, int age, String rol, String inWorksFor) {
         this.age = age;
         this.rol = rol;
         this.name = name;
         this.lastName = lastName;
+        this.worksFor = inWorksFor;
     }
 
     public int getAge() {
-        return age;
+        return this.age;
     }
 
     public void setAge(int age) {
@@ -25,7 +26,7 @@ public class PitCrewMember {
     }
 
     public String getRol() {
-        return rol;
+        return this.rol;
     }
 
     public void setRol(String rol) {
@@ -33,7 +34,7 @@ public class PitCrewMember {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -41,18 +42,18 @@ public class PitCrewMember {
     }
 
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public EnumWorksFor getWorksFor() {
-        return worksFor;
+    public String getWorksFor() {
+        return this.worksFor;
     }
 
-    public void setWorksFor(EnumWorksFor worksFor) {
-        this.worksFor = worksFor;
+    public void setWorksFor(String inWorksFor) {
+        this.worksFor = inWorksFor;
     }
 }

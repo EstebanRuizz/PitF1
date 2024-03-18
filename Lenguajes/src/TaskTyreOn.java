@@ -13,7 +13,7 @@ public class TaskTyreOn extends PitCrewTeam {
         System.out.println("Soy un tyre on, mi labor es cargar las llantas y encajarlas en el carro. \n");
     }
 
-    public boolean installTires(int numberOfTires, boolean needTires, boolean newTires) {
+    public boolean principalAction(int numberOfTires, boolean needTires, boolean newTires) {
         if (numberOfTires == this.getNumberOfTires() || this.getNumberOfTires() < 5 || needTires == this.getNeedTires()
                 || newTires == this.getNewTires()) {
             return true;
