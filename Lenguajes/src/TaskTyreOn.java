@@ -5,7 +5,7 @@ public class TaskTyreOn extends PitCrewTeam {
     private boolean newTires = true;
 
     public TaskTyreOn() {
-        super(null);
+        super();
     }
 
     public void speak() {

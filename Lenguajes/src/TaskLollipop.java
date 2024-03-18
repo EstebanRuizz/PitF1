@@ -3,8 +3,7 @@ public class TaskLollipop extends PitCrewTeam {
     private int requiredMembers = 2;
 
     public TaskLollipop() {
-        super(null);
-        this.PitCrewTaskName = "Check for 'Lollipop man'";
+        super();
     }
 
     public void speak() {

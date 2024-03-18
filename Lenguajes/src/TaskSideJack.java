@@ -2,7 +2,7 @@ public class TaskSideJack extends PitCrewTeam {
 
     
     public TaskSideJack() {
-        super(null); 
+        super(); 
     }
     
     public void speak(){

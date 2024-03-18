@@ -2,7 +2,7 @@
 public class TaskTyreGunner extends PitCrewTeam {
 
     public TaskTyreGunner() {
-        super(null);
+        super();
     }
 
     public void speak() {

@@ -1,4 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class TeamDriverA {
+    private List<String> taskRequired = new ArrayList<>();
     private String teamName;
     private String carColor;
     private int numberOfRaces;
@@ -7,6 +11,8 @@ public class TeamDriverA {
         this.teamName = teamName;
         this.carColor = carColor;
         this.numberOfRaces = numberOfRaces;
+
+
     }
 
     public String getTeamName() {

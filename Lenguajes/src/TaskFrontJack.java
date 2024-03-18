@@ -4,7 +4,7 @@ public class TaskFrontJack extends PitCrewTeam {
     private int requiredMembers = 2;
 
     public TaskFrontJack() {
-        super(null);
+        super();
     }
 
     public void setIncapacitated(boolean incapacitated) {

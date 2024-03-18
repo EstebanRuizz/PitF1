@@ -2,7 +2,7 @@
 public class TaskRearJack extends PitCrewTeam {
 
     public TaskRearJack() {
-        super(null);
+        super();
     }
 
     public void speak() {
