@@ -51,5 +51,8 @@ public class Main {
         TeamDriverB teamDriverB = new TeamDriverB("TeamDriverB", "Mercedez", 95);
 
 
+        for (PitCrewMember pitCrewMember : ListPitCrewMember) {
+            System.out.println(pitCrewMember.getName());
+        }
     }
 }

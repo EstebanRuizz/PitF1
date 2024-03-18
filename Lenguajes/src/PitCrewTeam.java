@@ -14,13 +14,17 @@ public class PitCrewTeam {
     }
 
     public void printInformation() {
-        for (PitCrewMember pitCrewMember : ListPitCrewMember) {
-            System.out.println("age: " + pitCrewMember.getAge());
-            System.out.println("rol: " + pitCrewMember.getRol());
-            System.out.println("name: " + pitCrewMember.getName());
-            System.out.println("lastName: " + pitCrewMember.getLastName());
-            System.out.println("worksFor: " + pitCrewMember.getWorksFor().toString());
-            System.out.println();
+        if (this.ListPitCrewMember != null) {
+            for (PitCrewMember pitCrewMember : this.ListPitCrewMember) {
+                System.out.println("age: " + pitCrewMember.getAge());
+                System.out.println("rol: " + pitCrewMember.getRol());
+                System.out.println("name: " + pitCrewMember.getName());
+                System.out.println("lastName: " + pitCrewMember.getLastName());
+                System.out.println("worksFor: " + pitCrewMember.getWorksFor().toString());
+                System.out.println();
+            }
+        } else {
+            System.out.println("La Lista PitCrewMember esta vacia");
         }
     }
 
